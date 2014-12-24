@@ -4,8 +4,10 @@
 require 'rubygems'
 require 'bundler/setup'
 require "require_all"
-
 require "singleton"
+
+# Add requiere for gems in Gemfile
+Bundler.require
 
 require_all "#{ROOT_DIR}/lib"
 require_all "#{ROOT_DIR}/config"
