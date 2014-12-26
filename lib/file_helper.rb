@@ -1,7 +1,9 @@
 module FileHelper
+
 	# -------------------------------------------------------------------------
-	# Public Methods...
-	# -------------------------------------------------------------------------	
+	# Public Methods
+	# -------------------------------------------------------------------------
+
 	def self.delete(a_path)
 		File.delete(a_path) if File.exist?(a_path)
 	end
@@ -10,4 +12,4 @@ module FileHelper
 		FileUtils.mkdir_p(a_path) unless File.exists?(a_path)
 	end
 
-end 
+end

@@ -26,7 +26,7 @@ require_all "#{ROOT_DIR}/lib"
 require_all "#{ROOT_DIR}/config"
 
 # ----------------------------------------------------------------------------
-# Setup Environment
+# Project initialize
 # ----------------------------------------------------------------------------
 LOGGER = LoggerFactory.instance.logger
 FileHelper.create_path TMP_DIR
