@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "require_all"
+gem 'require_all'
 
 group :development,:test do
   # Debugger
@@ -13,3 +13,4 @@ group :development,:test do
   gem 'pry-rescue'
   gem 'bond'
 end
+

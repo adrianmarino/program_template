@@ -15,7 +15,7 @@ class LoggerFactory
 
 	private
 	def create_log_path
-		FileHelper.create_path LOGGER_PATH
+		FileHelper.create_path AppConfig::LOGGER_PATH
 	end
 
 	#------------------------------------------------------------------------------
@@ -24,7 +24,7 @@ class LoggerFactory
 
 	def initialize
 		create_log_path
-		@logger = Logger.new LOGGER_FILE_NAME
+		@logger = Logger.new AppConfig::LOGGER_FILE_NAME
 	end
 
 end
