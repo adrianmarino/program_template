@@ -1,4 +1,4 @@
-ENV['ENV'] = 'test'
+ENV['ENV'] ||= 'test'
 
 ROOT_DIR="."
 require "#{ROOT_DIR}/lib/generals"
