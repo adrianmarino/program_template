@@ -10,7 +10,7 @@ require "singleton"
 # Bundle require
 # ----------------------------------------------------------------------------
 ENV['ENV'] ||= 'development'
-puts "Environment: #{ENV['ENV']}" if [:development, :test ].any? {|a_group| ENV['ENV'] == a_group.to_s }
+puts "Environment: #{ENV['ENV']}"
 Bundler.require(:default, ENV['ENV'])
 
 # ----------------------------------------------------------------------------
